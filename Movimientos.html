@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style/Movimientos.css">
+<title>Tabla de cálculo</title>
+</head>
+<body>
+
+<h2>Ingresa un nombre y código de búsqueda</h2>
+
+
+
+<button class="Pago" onclick="pago">Agregar Pago</button>
+<p id="pago"></p>
+
+<button class="NuevoCliente" onclick="Nuevo">Crear Cliente</button>
+<p id="cliente"></p>
+<table border="1">
+<tr>
+<th>Codigo</th>
+<th>Nombre</th>
+<th>Ruta</th>
+<th>Cedula</th>
+<th>Fecha</th>
+<th>Nonto Credito</th>
+<th>N° Cuotas</th>
+<th>Cuotas en Mora</th>
+<th>Proximo Pago</th>
+<th>interes</th>
+<th>Valor Total</th>
+<th>Saldo Pendiete</th>
+
+
+</tr>
+<td><input type="id" id="Codigo" name="Codigo"></td>
+<td><input type="text" text="Nombre" name="Nombre"></td>
+<td><input type="id" id="Ruta" name="Ruta"></td>
+<td><input type="id" id="cedula" name="Cedula"></td>
+<td><input type="date" id="date" name="date"></td>
+<td><input type="id" id="NontoCredito" name="NontoCredito"></td>
+<td><input type="id" id="NCuotas" name="NCuotas"></td>
+<td><input type="ii" id="Cuotas en Mora" name="Cuotas en Mora"></td>
+<td><input type="id" id="Proximo Pago" name="Proximo Pago"></td>
+<td><input type="id" id="interes" name="interes"></td>
+<td><input type="id" id="Valor Total" name="Valor Total"></td>
+<td><input type="id" id="Saldo Pendiete" name="Saldo Pendiete"></td>
+
+
+</table>
+
+<button onclick="calcular()">Calcular</button>
+<p id="resultado"></p>
+
+<script>
+function calcular() {
+    let num1 = parseInt(document.getElementById("celda1").value);
+    let num2 = parseInt(document.getElementById("celda2").value);
+    let num3 = parseInt(document.getElementById("celda3").value);
+    let resultado = num1 + num2 - num3;
+    document.getElementById("resultado").innerHTML = "El resultado de la suma de la celda 1 y celda 2  mesnos la celda 3 es: " + resultado;
+}
+</script>
+
+</body>
+</html>

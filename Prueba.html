@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla de cálculo</title>
+</head>
+<body>
+
+<h2>Ingresa un nombre y código de búsqueda</h2>
+
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre">
+
+<label for="codigo">Código:</label>
+<input type="text" id="codigo" name="codigo">
+
+<table border="1">  
+<tr>
+<th></th>
+<th>Celda 1</th>
+<th>Celda 2</th>
+<th>Celda 3</th>
+</tr>
+<tr>
+<th>Fila 1</th>
+<td><input type="number" id="celda1" name="celda1"></td>
+<td><input type="number" id="celda2" name="celda2"></td>
+<td><input type="number" id="celda3" name="celda3"></td>
+</tr>
+<tr>
+<th>Fila 2</th>
+<td><input type="number" id="celda4" name="celda4"></td>
+<td><input type="number" id="celda5" name="celda5"></td>
+<td><input type="number" id="celda6" name="celda6"></td>
+</tr>
+<tr>
+<th>Fila 3</th>
+<td><input type="number" id="celda7" name="celda7"></td>
+<td><input type="number" id="celda8" name="celda8"></td>
+<td><input type="number" id="celda9" name="celda9"></td>
+</tr>
+</table>
+
+<button onclick="calcular()">Calcular</button>
+<p id="resultado"></p>
+
+<script>
+function calcular() {
+    let num1 = parseInt(document.getElementById("celda1").value);
+    let num2 = parseInt(document.getElementById("celda2").value);
+    let resultado = num1 + num2;
+    document.getElementById("resultado").innerHTML = "El resultado de la suma de la celda 1 y celda 2 es: " + resultado;
+}
+</script>
+
+</body>
+</html>

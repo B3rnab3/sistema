@@ -1,0 +1,117 @@
+<html>
+    <body>
+        <head>
+    
+    <link rel="stylesheet" href="style/Principal.css">
+    <script src="https://kit.fontawesome.com/a2dd6045c4.js"></script>
+    <title>Tu empresa tu negocio"</title>
+</head>
+
+
+
+
+ 
+
+
+<div id="header"> 
+
+   <div class="Atras" >
+        <i class="fa-solid fa-reply-all"></i>
+    <a href="Index.php">Atras</a>
+    </div>
+
+
+
+    <ul id="nav">
+        <li><a    href="#">Registro</a>
+                      <ul>
+                 <li><a href="registro.php" target="_blank">Registro Nuevo Cliente</a>
+                
+                  </ul>
+             </li>
+    
+
+
+        <li><a    href="#">Movimientos</a>  
+                <ul>
+                 <li><a href="Movimientos.html" target="_blank">Movimientos de Clientes</a></li>
+                  </ul>
+        </li>
+    
+    
+     
+
+    <li><a    href="#">estado</a>
+                    <ul>
+                     <li><a href="Activos.html" target="_blank">Activos</a></li>
+                    <li><a href="Inactivos.html" target="_blank">Inactivos</a></li> 
+                  
+                   </ul>
+        </li>
+                   
+    </div> 
+
+
+
+
+    <div class="container">
+        <h1>
+            Clientes pagos
+        </h1> 
+        <button onclick="addRow()">Agregar Fila</button>
+        <table id="mitabla" class="tabla operacional">
+            <thead>
+                <tr >
+                    <th> Codigo</th>
+                    <th>Nombre y apellido</th>
+                    <th>Fecha de Credito</th>
+                    <th>N Cuotas</th>
+                    <th>Cuotas Pagas</th>
+                    <th>Cuotas Pendientes</th>
+                    <th>Cuotas en Mora</th>
+                    <th>Valor Credito</th>
+                    <th>Valor de Cada Cuota</th>
+                    <th>Valor del Ultimo Pago</th>
+                    <th>Interes del 5%</th>
+                    <th>Valor con Interes</th>
+                </tr>
+          
+
+                <tr id="celdastabla">
+                    <td><input type="number" id="Codigo" name="Codigo" class="form-control" onKeyUp="formula()"></td>
+                    <td><input type="text" text="Nombre" name="Nombre" class="form-control"></td>
+                    <td><input type="date" id="Fecha de Credito" name="Fecha de Credito" class="form-control"></td>
+                    <td><input type="number" id="N Cuotas" name="N Cuotas" class="form-control"></td>
+                    <td><input type="number" id="Cuotas Pagas" name="Cuotas Pagas" class="form-control"></td>
+                    <td><input type="number" id="Cuotas Pendientes" name="Cuotas Pendientes" class="form-control" value="CuotasPendientes"></td>
+                    <td><input type="number" id="Cuotas en Mora" name="Cuotas en Mora" class="form-control"></td>
+                    <td><input type="number" id="Valor Credito" name="Valor Credito" class="form-control"></td>
+                    <td><input type="number" id="Valor Cuota" name="Valor Cuota" class="form-control"></td>
+                    <td><input type="number" id="Valor Ultimo pago" name="Valor Ultimo pago" class="form-control"></td>
+                    <td><input type="number" id="Interes" name="Interes" class="form-control"></td>
+                    <td><input type="number" id="Valor Interes" name="Valor Interes" class="form-control"></td>    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function addRow() {
+        // Obtener la tabla por su ID
+        var table = document.getElementById("mitabla").getElementsByTagName('tbody')[0];
+        
+        // Crear una nueva fila
+        var newRow = table.insertRow();
+        
+        // Crear dos nuevas celdas en la nueva fila
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        
+        // Agregar texto a las nuevas celdas
+        // cell1.innerHTML = " ";
+        // cell2.innerHTML = " ";
+    } 
+
+
+
+</body>
+</html>

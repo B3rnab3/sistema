@@ -1,0 +1,38 @@
+// variables del formulario
+    $id=$POSt['id']; 
+    $cedula=$POSt['cedula'];
+    $nombre=$POSt['nombres'];
+    $apellidos=$POSt['apellidos'];
+    $direccion=$POSt['direccion'];
+    $telefono=$POSt['telefono'];
+
+    <?php
+    //Cadena de Conexion
+        $hostname = "localhost";
+        $username = "root";
+        $password = "";
+        $basededatosname = "sistema";
+        $tablaneme="registro"
+    
+    
+    
+        //Crear la cadena de conexion
+     //$conn = new mysqli_connect ($hostname, $username, $password, $basededatosname);
+     $conexion = new mysqli_connect($hostname, $username, $password, $basededatosname);
+    
+    
+    
+    // verificacion de la conexion
+    if (!$conn){
+        die ("Error al conectar a la base de datos" .mysql_connect_error());
+    
+    }
+    
+    echo "Te has Conectado correctamente a la base de datos";
+    
+    
+    //Insercción de datos
+     $consulta=  "INSERT INTO registro (id, cedula, nombres, apellidos, direccion, Telefono) VALUES ('1', '1014235459', 'Jonn Jairo', 'Cepeda', 'Calle 78#18-35', '314236452')";
+    
+     echo "Datos ingresados Correctamente"
+    ?>

@@ -1,0 +1,25 @@
+body{
+    background-color: azure;
+    margin: none;
+    border: none;
+    padding: none;
+
+}
+
+.NuevoCliente{
+height: 50px;
+height: 30px;
+border-bottom: 5px solid rgb(255, 220, 229);
+background-color: #2fd8ab;
+color:beige;
+}
+
+
+.Pago{
+transform: translate(1949%, 159%);
+height: 50px;
+height: 30px;
+border-bottom: 5px solid rgb(255, 220, 229);
+background-color: #2fd8ab;
+color:beige;
+}

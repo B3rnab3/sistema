@@ -1,0 +1,73 @@
+body{
+    background-color: ;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.Atras{
+    color: #1BB94A;
+    font-size: 2rem;
+}
+
+/*Div Encabezado*/
+#header{
+    width: 100%px;
+    background: black;
+    height: 120px;
+    
+    }
+    
+    #header ul {
+         margin: 0;
+         list-style: none;
+         padding: 0;
+         display: flex;
+    }
+    
+
+    /*Folder*/
+    #header li:hover{
+        background: rgba(0,0,0,0.3);
+    }
+    
+
+    /*Parrafos*/
+    #header li a{
+    display: block;
+    padding: 20px 20px;
+    color: 	beige;
+    text-decoration: none;	
+
+    }
+
+
+    
+    /*Abajo desplegable */
+    #header ul ul{
+        position: absolute;
+        display: block;
+        background: #1BB94A;
+        transform: translateX(60%);
+        opacity: 0;
+        transition: all .6s;
+    }
+    
+    #header ul li:hover ul{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+    #header li{
+        flex-grow: 1;
+    }
+    
+
+    

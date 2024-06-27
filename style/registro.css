@@ -1,0 +1,203 @@
+ body{
+        font-family: 'Libre Baskerville', 'serif', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        font: 1,2rem;
+        line-height: 1,3em;
+        margin: 0;
+    }
+
+section{
+    margin: 0px;
+    background: url("https://th.bing.com/th/id/R.4800fa911f04b28838530c7450c32a9a?rik=cgW775jpirsoTQ&riu=http%3a%2f%2fwww.torre-bg.com%2fimages%2ftravel_offer_images%2f7e5a4106f66b6ad3bc2ab53bdb367193.jpg&ehk=MejdVgIepCqwzYBN6gDgocfqui2Swu2g2yqP%2bzUfbdw%3d&risl=&pid=ImgRaw&r=0") no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    height: 100vh;
+}
+
+
+div{
+    background-color: #BDE0C0;
+    width:auto;
+    height: 90px;
+    padding: 3px 10px;
+border: PowderBlue 5px solid;
+border-radius: 0px;
+}
+
+
+
+.entrada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(84, 87, 92);
+  }
+
+.field {
+	padding-right: 1px;
+    border: 2px solid rgb(15, 15, 15);
+    justify-content: center;    
+    text-align: right;
+    align-items: right;
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    overflow: 25%;
+}
+label{
+    display: inline-block;
+    text-align: left;
+    width: 270px;
+
+    
+  }
+input{
+    width: 200px;
+    display: inline-block;
+    align-items: left;
+    text-align: left;
+}
+
+.Bienvenida {
+    color: beige;
+    text-align: center;
+}
+.CC {
+    color: beige;
+    text-align: center;
+    
+}
+
+.NU{
+    color: beige;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+
+form{
+    background-color: #4F686F;
+    padding: 3px 10px;
+    border: PowderBlue 5px solid;
+    border-radius: 20px;
+    width: 550px;
+    height: 600px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    margin: 70px;
+    transform: translate(-39%, -35%);
+}
+
+.f{
+    border: none;
+    width: 80%;
+    margin-bottom: 20px;
+    border-bottom: 2PX solid beige;
+    background: transparent;
+    outline: none;
+    height: 25PX;
+    color: beige;
+    font-size: 16px;
+    font-size: 1.2rem;
+ 
+  
+ 
+}
+
+.UsuarioN{
+    margin: 20px;
+    background-color: red;
+    height: 200px;
+    width: 450px;
+    left: 65px;
+    border-radius: 20px;
+}
+.Correo{
+    width: 80%;
+    margin-bottom: 20px;
+    border-bottom: 2PX solid beige;
+    background: transparent;
+    outline: none;
+    height: 25PX;
+    color: beige;
+    font-size: 16px;
+    font-size: 1.2rem;
+   
+}
+
+.R{
+    position: absolute;
+    color: beige;
+    right: 12%;
+    background: transparent;
+    font-size: 18px;
+    border: none;
+    width: 70%;
+    outline: none;
+    
+
+}
+
+.NUI{
+    position: relative;
+    left: 29%;
+    margin: -43px;
+    color: red;
+    width: 65%;
+    color: beige;
+    font-size: 16px;
+    font-size: 1rem;
+    background: transparent;
+    outline: none;
+    border: none;
+
+}
+
+.btncreF{
+    background-color: #2fd8ab;
+    color:beige;
+    font-size: 1.4rem;
+    width: 200px;
+    left: 20px;
+    border-bottom: 5px solid rgb(255, 220, 229);
+    transform: translate(89%, 0%);
+}
+
+
+.btncreU{
+    background-color: #2fd8ab;
+    color:beige;
+    font-size: 1.4rem;
+    width: 200px;
+    border-bottom: 5px solid rgb(255, 220, 229);
+    transform: translate(65%, -100%);
+
+}
+
+.fa-solid{
+    color: beige;
+    font-size: 1.2rem;
+    left: 280px;
+    position: inherit;
+}
+
+
+
+footer{
+    background-color: #4F686F;
+    width: auto;
+    height: 240px;
+    text-align: center;
+}
+
+.Foo{
+    color: beige;
+}
+
+footer text{
+  text-decoration: dotted;
+}
